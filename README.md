@@ -31,3 +31,21 @@ This project is about hotel booking and management system. The two endusers are 
    3. Allow users to add guests
    4. Proceed to payments
    5. Update the booking status to confirmed
+
+# Dynamic Pricing Strategy
+
+1.  Design Patterns to use : Strategy, Decorator
+    1. Strategy - Use 'n' no of strategies
+    2. Have a base and add features over it
+2.  Types of Strategies:
+    1. BasePricingStrategy - The base price
+    2. OccupancyPricingStrategy - if booked above 80% then increase price
+    3. UrgencyPricingStrategy - if booked within 7 days, the increase price
+    4. HolidaysPricingStrategy - Check if it is a holiday, then increase price
+    5. DiscountPricingStrategy - If sale is going on, then decrease the price
+
+# OUT-OF-SCOPE
+
+1. Message Queue : To update inventory in realtime
+2. Caching : for search query
+3. Microservice Architecture
